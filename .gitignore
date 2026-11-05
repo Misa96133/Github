@@ -1,0 +1,8 @@
+# 秘密の情報
+.env
+
+# Mac が勝手に作るファイル
+.DS_Store
+
+# パッケージのフォルダ
+node_modules/
