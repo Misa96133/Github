@@ -1,7 +1,7 @@
 <?php if ( have_posts() ) : ?>
-  <?php while ( ＿＿＿＿() ) : the_post(); ?>// have post
+  <?php while ( have_post() ) : the_post(); ?>
     <article>
-      <h2><?php ＿＿＿＿(); ?></h2> //the title
+      <h2><?php the_title(); ?></h2> 
       <p><?php the_excerpt(); ?></p>
       <a href="<?php the_permalink(); ?>">続きを読む</a>
     </article>
