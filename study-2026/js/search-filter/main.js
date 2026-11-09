@@ -14,10 +14,9 @@ function render(items) {
 
 render(fruits);
 
-input.addEventListener("change", () => {
+input.addEventListener("input", () => {
   const word = input.value;                              // 入力された文字
   const result = fruits.filter((item) => item.includes(word));
-  render(result);
   if (result.length === 0) {
       list.innerHTML = "<li>見つかりませんでした</li>";
     } else {
