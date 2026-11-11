@@ -6,3 +6,6 @@
 
 # パッケージのフォルダ
 node_modules/
+
+# メモは push しない
+study-2026/gitignore-test/memo.txt
