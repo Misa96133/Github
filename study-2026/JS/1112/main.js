@@ -28,3 +28,8 @@ search.addEventListener('input', () => {
     const result = users.filter((user) => user.name.includes(word));
     render(result);
 });
+
+// Q1: users を関数の外に書く理由 →　?
+// Q2: innerHTML = '' がないと →　どんどん追加されていく。
+// Q3: 小文字でも検索できるようにするには →　？
+
