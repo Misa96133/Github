@@ -1,17 +1,17 @@
 
 <?php //もし、投稿があったら ?>
 <?php if ( have_posts() ) : ?>
-    <?php//投稿がある分だけ繰り返す ?>
+    <?php //投稿がある分だけ繰り返す ?>
   <?php while ( have_posts() ) : the_post(); ?>
-  <?php//タイトルを呼び出し ?>
+  <?php //タイトルを呼び出し ?>
     <h2><?php the_title(); ?></h2>
-    <?php//本文を呼び出し ?>
+    <?php //本文を呼び出し ?>
     <div><?php the_content(); ?></div>
-    <?php//while終わり ?>
+    <?php //while終わり ?>
   <?php endwhile; ?>
   <?php //もし、投稿が何もなかったら ?>
 <?php else : ?>
-    <?php//記事がありませんと表示 ?>
+    <?php //記事がありませんと表示 ?>
   <p>記事がありません</p>
 <?php endif; ?>
 
